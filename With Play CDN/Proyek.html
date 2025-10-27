@@ -1,69 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Beranda | Infan Abriansa</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="icon" href="image/totoro-cute-anime-face-sticker-preview-removebg-preview.png">
+  <title>Proyek | Infan Abriansa</title>
 </head>
 
-<body class="bg-stone-200">
+<body class="flex flex-col min-h-screen bg-stone-200">
 
+  <!-- Navigasi -->
+  <nav class="bg-gray-300 text-base font-bold shadow-md">
+    <ul class="flex flex-wrap justify-center md:justify-start md:ml-52 py-3 space-x-4">
+      <li class="hover:text-slate-700"><a href="Beranda.html">Beranda</a></li>
+      <li class="border-b-2 hover:text-slate-700"><a href="Proyek.html">Proyek</a></li>
+      <li class="hover:text-slate-700"><a href="Tentang.html">Tentang</a></li>
+      <li class="hover:text-slate-700"><a href="Kontak.html">Kontak</a></li>
+    </ul>
+  </nav>
 
-<!-- Navigasi broo -->
-<nav class="bg-gray-300 text-base font-bold shadow-md">
-  <ul class="ml-52 pt-3 pb-3">
-    <li class="inline-block mr-5 hover:text-slate-700"><a href="Beranda.html">Beranda</a></li>
-    <li class="inline-block mr-5 border-b-2 hover:text-slate-700"><a href="Proyek.html">Proyek</a></li>
-    <li class="inline-block mr-5 hover:text-slate-700"><a href="Tentang.html">Tentang</a></li>
-    <li class="inline-block hover:text-slate-700"><a href="Kontak.html">Kontak</a></li>
-  </ul>
-</nav>
+  <!-- Konten Proyek -->
+  <main class="flex-grow flex flex-col justify-start items-center w-full max-w-6xl mx-auto mt-10 px-4 text-center mb-16">
+    <h1 class="text-4xl font-bold mb-4 tracking-wider">PROYEK</h1>
+    <h2 class="p-2 rounded-lg bg-sky-600 text-white inline-block">Tidak Bermaksud Pamer</h2>
 
-<!-- Proyek isi Konten -->
-<div class="w-4xl h-[700px] m-auto mt-5 text-center">
-    <h1 style="letter-spacing: 2px; padding-top: px;" class="text-4xl font-bold mb-4 text-center">PROYEK</h1>
-    <h2 class="p-2 rounded-lg bg-sky-600 text-white inline">Tidak Bermaksud Pamer</h2>
-  <div class="mt-5 grid grid-cols-3 gap-9">
-    <!-- Proyek 1 -->
-    <div style="width: 300px;" class="">
-      <div style="background-image: url(image/Wallpaper\ \(15\).jpg); height: 200px; width: 300px; background-size: cover;" ></div>
-      <h2 class="text-center font-semibold mt-2">Unreal Engine</h2>
-    </div>
-    <!-- Proyek 2 -->
-    <div style="width: 300px;" class="">
-      <div style="background-image: url(image/Karya\ Novelme.jpeg); height: 200px; width: 300px; background-size: cover; background-position: 0 -60px;" ></div>
-      <h2 class="text-center font-semibold mt-2">Menulis Novel</h2>
-    </div>
-    <!-- Proyek 3 -->
-    <div style="width: 300px;" class="">
-      <div style="background-image: url(image/Toji\ fushiguro.jpeg); height: 200px; width: 300px; background-size: cover; background-position: -20px 0;" ></div>
-      <h2 class="text-center font-semibold mt-2">Toji Fushiguro Pysique</h2>
-    </div>
-    <!-- Proyek 4 -->
-    <div style="width: 300px;" class="">
-      <div style="background-image: url(image/Proyek\ Menghias\ Profil\ Steam.jpeg); background-position: 0 -60px; height: 200px; width: 300px; background-size: cover;" ></div>
-      <h2 class="text-center font-semibold mt-2">Menghias Profil Steam</h2>
-    </div>
-    <!-- Proyek 5 -->
-    <div style="width: 300px;" class="">
-      <div style="background-image: url(image/rakit\ pc\ tanpa\ cassing.jpeg); background-position: 0 -100px; height: 200px; width: 300px; background-size: cover;" ></div>
-      <h2 class="text-center font-semibold mt-2">Rakit PC tanpa Cassing</h2>
-    </div>
-    <!-- Proyek 6 -->
-    <div style="width: 300px;" class="">
-      <div style="background-image: url(image/Menamatkan\ Minecraft\ di\ h.jpeg); background-position: -70px 0; height: 200px; width: 300px; background-size: cover;" ></div>
-      <h2 class="text-center font-semibold mt-2">Minecraft Tamat di HP!?!?</h2>
-    </div>
+    <!-- Grid Proyek -->
+    <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center w-full">
+      <!-- Proyek 1 -->
+      <div class="w-full max-w-[300px]">
+        <div class="h-48 bg-cover bg-center rounded-md shadow-md"
+             style="background-image: url('image/Wallpaper (15).jpg');"></div>
+        <h2 class="text-center font-semibold mt-2">Unreal Engine</h2>
+      </div>
 
-  </div>
-</div>
+      <!-- Proyek 2 -->
+      <div class="w-full max-w-[300px]">
+        <div class="h-48 bg-cover bg-[center_top_-40px] rounded-md shadow-md md:bg-[center_top_-60px]"
+             style="background-image: url('image/Karya Novelme.jpeg');"></div>
+        <h2 class="text-center font-semibold mt-2">Menulis Novel</h2>
+      </div>
 
-<!-- Footer boy -->
-<!-- Copyright -->
-<footer class="bg-gray-900 text-gray-200 py-5">
+      <!-- Proyek 3 -->
+      <div class="w-full max-w-[300px]">
+        <div class="h-48 bg-cover bg-[center_left_-20px] rounded-md shadow-md md:bg-[center_left_-20px]"
+             style="background-image: url('image/Toji fushiguro.jpeg');"></div>
+        <h2 class="text-center font-semibold mt-2">Toji Fushiguro Pysique</h2>
+      </div>
+
+      <!-- Proyek 4 -->
+      <div class="w-full max-w-[300px]">
+        <div class="h-48 bg-cover bg-[center_top_-60px] rounded-md shadow-md"
+             style="background-image: url('image/Proyek Menghias Profil Steam.jpeg');"></div>
+        <h2 class="text-center font-semibold mt-2">Menghias Profil Steam</h2>
+      </div>
+
+      <!-- Proyek 5 -->
+      <div class="w-full max-w-[300px]">
+        <div class="h-48 bg-cover bg-[center_top_-80px] rounded-md shadow-md md:bg-[center_top_-100px]"
+             style="background-image: url('image/rakit pc tanpa cassing.jpeg');"></div>
+        <h2 class="text-center font-semibold mt-2">Rakit PC tanpa Cassing</h2>
+      </div>
+
+      <!-- Proyek 6 -->
+      <div class="w-full max-w-[300px]">
+        <div class="h-48 bg-cover bg-[left_-50px_top] rounded-md shadow-md md:bg-[left_-70px_top]"
+             style="background-image: url('image/Menamatkan Minecraft di h.jpeg');"></div>
+        <h2 class="text-center font-semibold mt-2">Minecraft Tamat di HP!?!?</h2>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-auto bg-gray-900 text-gray-200 py-5">
     <h1 class="text-center text-gray-500 text-sm">© 2025 Infan Abriansa.</h1>
-<footer>
-
+  </footer>
 </body>
 </html>

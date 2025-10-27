@@ -1,53 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Beranda | Infan Abriansa</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="icon" href="image/totoro-cute-anime-face-sticker-preview-removebg-preview.png">
+  <title>Beranda | Infan Abriansa</title>
 </head>
 
-<body class="bg-stone-200">
+<body class="flex flex-col min-h-screen bg-stone-200">
 
+  <!-- Navigasi -->
+  <nav class="bg-gray-300 text-base font-bold shadow-md">
+    <ul class="flex flex-wrap justify-center md:justify-start md:ml-52 py-3 space-x-4">
+      <li class="border-b-2 hover:text-slate-700"><a href="Beranda.html">Beranda</a></li>
+      <li class="hover:text-slate-700"><a href="Proyek.html">Proyek</a></li>
+      <li class="hover:text-slate-700"><a href="Tentang.html">Tentang</a></li>
+      <li class="hover:text-slate-700"><a href="Kontak.html">Kontak</a></li>
+    </ul>
+  </nav>
 
-<!-- Navigasi broo -->
-<nav class="bg-gray-300 text-base font-bold shadow-md">
-  <ul class="ml-52 pt-3 pb-3">
-    <li class="inline-block mr-5 border-b-2 hover:text-slate-700"><a href="Beranda.html">Beranda</a></li>
-    <li class="inline-block mr-5 hover:text-slate-700"><a href="Proyek.html">Proyek</a></li>
-    <li class="inline-block mr-5 hover:text-slate-700"><a href="Tentang.html">Tentang</a></li>
-    <li class="inline-block hover:text-slate-700"><a href="Kontak.html">Kontak</a></li>
-  </ul>
-</nav>
-
-
-
-<!-- Isi Contentnya -->
-<div class="w-3xl h-[500px] m-auto mt-40">
-
-  <div style="width: 250px; height: 250px; background-image: url(image/Profil.jpg); background-size: cover; border-radius: 100%; background-position: -80px 0; float: right; border: 3px solid black;"></div>
-    <h1 style="letter-spacing: 2px; padding-top: 60px;" class="text-4xl font-bold mb-2">Infan Abriansa</h1>
-    <h2>Hallo semuannya 😁<br>Selamat datang di website portofolio saya</h2>
-
-<!-- Navigasi ke Proyek.html -->
-<a href="Proyek.html">
-  <div class="mt-2 inline-block">
-    <h1 class="p-2 bg-sky-600 inline-block rounded-md text-white hover:bg-cyan-600" >📚 Lihat Proyek</h1>
-  </div>
-</a>
-
-<!-- Navigasi ke Tentang.html -->
-  <a href="Tentang.html">
-    <div class="ml-2 mt-2 inline-block">
-      <h1 class="p-2 bg-sky-600 inline-block rounded-md text-white hover:bg-cyan-600" >🔎 Tentang Saya</h1>
+  <!-- Isi Konten -->
+  <div class="max-w-4xl mx-auto mt-20 px-5 flex flex-col-reverse md:flex-row items-center md:items-start gap-8">
+    <div class="text-center md:text-left">
+      <h1 class="text-4xl font-bold mb-2 tracking-wide mt-6 md:mt-16">Infan Abriansa</h1>
+      <h2>Hallo semuannya 😁<br>Selamat datang di website portofolio saya</h2>
+      <div class="mt-4 flex flex-wrap justify-center md:justify-start gap-3">
+        <a href="Proyek.html">
+          <div class="p-2 bg-sky-600 rounded-md text-white hover:bg-cyan-600">📚 Lihat Proyek</div>
+        </a>
+        <a href="Tentang.html">
+          <div class="p-2 bg-sky-600 rounded-md text-white hover:bg-cyan-600">🔎 Tentang Saya</div>
+        </a>
+      </div>
     </div>
-  </a>
-</div>
-<!-- Footer boy -->
-<!-- Copyright -->
-<footer id="kontak" class="bg-gray-900 text-gray-200 py-5">
+
+    <!-- Foto Profil -->
+    <div class="w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-black bg-[center_left_-85px] md:bg-[center_left_-115px]" 
+         style="background-image: url('image/Profil.jpg'); background-size: cover;">
+    </div>
+    <!-- Akhir Foto Profil -->
+  </div>
+  <!-- Akhir Isi Konten -->
+
+  <!-- Footer -->
+  <footer id="kontak" class="mt-auto bg-gray-900 text-gray-200 py-5">
     <h1 class="text-center text-gray-500 text-sm">© 2025 Infan Abriansa.</h1>
-<footer>
+  </footer>
 
 </body>
 </html>
